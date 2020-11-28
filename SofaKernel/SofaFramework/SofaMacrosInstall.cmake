@@ -274,6 +274,7 @@ macro(sofa_auto_set_target_properties)
                             # current target is relocatable
                             list(APPEND target_rpath
                                 "$ORIGIN/../../../${dep_reloc_install_dir}/lib"
+                                "@loader_path/../../../${dep_reloc_install_dir}/lib"
                                 "$$ORIGIN/../../../${dep_reloc_install_dir}/lib"
                                 )
                         else()
